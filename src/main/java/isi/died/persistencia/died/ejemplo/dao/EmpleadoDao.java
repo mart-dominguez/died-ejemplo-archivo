@@ -6,7 +6,6 @@
 package isi.died.persistencia.died.ejemplo.dao;
 
 import isi.died.persistencia.died.ejemplo.modelo.Empleado;
-import com.google.gson.reflect.TypeToken;
 import isi.died.persistencia.died.GenericDaoJSON;
 import java.util.List;
 
@@ -26,7 +25,7 @@ public class EmpleadoDao {
     }
 
     public List<Empleado> cargarLista(){
-        return db.cargar(new TypeToken<List<Empleado>>(){}.getType());
+        return db.cargar(new com.google.gson.reflect.TypeToken<List<Empleado>>(){}.getType());
     }
 
     
