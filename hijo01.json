@@ -1,0 +1,86 @@
+[
+  {
+    "cbuCuentaBancaria": "XYZ",
+    "horasSemanales": 345,
+    "liquidaciones": [
+      {
+        "id": 200,
+        "codigo": "UUU",
+        "detalle": "Bnnn",
+        "monto": 33.36
+      },
+      {
+        "id": 201,
+        "codigo": "NVA",
+        "detalle": "UNDFn",
+        "monto": 534.23
+      },
+      {
+        "id": 202,
+        "codigo": "PCA",
+        "detalle": "GCFA",
+        "monto": 11.68
+      }
+    ],
+    "id": 100,
+    "nombre": "ABC",
+    "costoHora": 55.55,
+    "esJefe": false,
+    "fechaContratacion": "Jan 1, 2017 12:00:00 AM",
+    "type": "empleado"
+  },
+  {
+    "cbuCuentaBancaria": "aFDe",
+    "horasSemanales": 258,
+    "liquidaciones": [
+      {
+        "id": 202,
+        "codigo": "PCA",
+        "detalle": "GCFA",
+        "monto": 11.68
+      },
+      {
+        "id": 204,
+        "codigo": "ICY",
+        "detalle": "CYAF",
+        "monto": 234.52
+      }
+    ],
+    "id": 101,
+    "nombre": "KICe",
+    "costoHora": 4582.83,
+    "esJefe": true,
+    "fechaContratacion": "Mar 1, 2017 12:00:00 AM",
+    "type": "empleado"
+  },
+  {
+    "cbuCuentaBancaria": "gdfg",
+    "horasSemanales": 753,
+    "liquidaciones": [
+      {
+        "id": 203,
+        "codigo": "ARA",
+        "detalle": "COAE",
+        "monto": 81.34
+      },
+      {
+        "id": 204,
+        "codigo": "ICY",
+        "detalle": "CYAF",
+        "monto": 234.52
+      },
+      {
+        "id": 200,
+        "codigo": "UUU",
+        "detalle": "Bnnn",
+        "monto": 33.36
+      }
+    ],
+    "id": 102,
+    "nombre": "PYXT",
+    "costoHora": 2756.14,
+    "esJefe": false,
+    "fechaContratacion": "Oct 11, 2017 12:00:00 AM",
+    "type": "empleado"
+  }
+]

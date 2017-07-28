@@ -9,6 +9,7 @@ import isi.died.persistencia.died.ejemplo.modelo.Empleado;
 import isi.died.persistencia.died.ejemplo.modelo.Contratado;
 import isi.died.persistencia.died.ejemplo.modelo.Sueldos;
 import com.google.gson.reflect.TypeToken;
+import isi.died.persistencia.died.ejemplo.modelo.Permanente;
 import java.lang.reflect.Type;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -45,16 +46,16 @@ public class GestorTest {
         try {
             sdf = new SimpleDateFormat("dd/MM/yyyy");
             datos = new ArrayList<>();
-            datos.add(new Empleado(1, "risus hendrerit risus sollicitudin ", 99.99, true, sdf.parse("01/01/2017")));
-            datos.add(new Empleado(2, "uctor nunc. Mauris consectetur p", 100.48, false, sdf.parse("04/01/2017")));
-            datos.add(new Empleado(3, "Curabitur sit amet nisi nibh", 99.99, true, sdf.parse("11/03/2017")));
-            datos.add(new Empleado(4, "nisl tellus sodales nibh, ", 99.99, true, sdf.parse("15/08/2017")));
-            datos.add(new Empleado(5, "Maecenas hendrerit elit sit amet ex suscipi 1", 99.99, true, sdf.parse("31/01/2017")));
-            datos.add(new Empleado(6, "Integer pulvinar diam in erat molestie blandit.1", 99.99, true, sdf.parse("01/08/2017")));
-            datos.add(new Empleado(7, "Nam dui felis, ", 99.99, true, sdf.parse("01/01/2017")));
-            datos.add(new Empleado(8, "consectetur nec velit", 99.99, true, sdf.parse("01/01/2017")));
-            datos.add(new Empleado(9, "laoreet vel consequat sed", 99.99, true, sdf.parse("01/01/2017")));
-            datos.add(new Empleado(10, "Vestibulum at tincidunt tortor, eu ultricies lectus", 99.99, true, sdf.parse("20/08/2017")));
+            datos.add(new Permanente(1, "risus hendrerit risus sollicitudin ", 99.99, true, sdf.parse("01/01/2017"),"asdf"));
+            datos.add(new Permanente(2, "uctor nunc. Mauris consectetur p", 100.48, false, sdf.parse("04/01/2017"),"asdf"));
+            datos.add(new Permanente(3, "Curabitur sit amet nisi nibh", 99.99, true, sdf.parse("11/03/2017"),"asdf"));
+            datos.add(new Permanente(4, "nisl tellus sodales nibh, ", 99.99, true, sdf.parse("15/08/2017"),"asdf"));
+            datos.add(new Permanente(5, "Maecenas hendrerit elit sit amet ex suscipi 1", 99.99, true, sdf.parse("31/01/2017"),"asdf"));
+            datos.add(new Permanente(6, "Integer pulvinar diam in erat molestie blandit.1", 99.99, true, sdf.parse("01/08/2017"),"asdf"));
+            datos.add(new Permanente(7, "Nam dui felis, ", 99.99, true, sdf.parse("01/01/2017"),"asdf"));
+            datos.add(new Permanente(8, "consectetur nec velit", 99.99, true, sdf.parse("01/01/2017"),"asdf"));
+            datos.add(new Permanente(9, "laoreet vel consequat sed", 99.99, true, sdf.parse("01/01/2017"),"asdf"));
+            datos.add(new Permanente(10, "Vestibulum at tincidunt tortor, eu ultricies lectus", 99.99, true, sdf.parse("20/08/2017"),"asdf"));
             
             datosDetalle= new ArrayList<>();
             datosDetalle.add(new Sueldos(200, "UUU", "Bnnn", 33.36));

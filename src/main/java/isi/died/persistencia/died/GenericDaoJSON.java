@@ -7,6 +7,10 @@ package isi.died.persistencia.died;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
+import isi.died.persistencia.died.ejemplo.modelo.Contratado;
+import isi.died.persistencia.died.ejemplo.modelo.Empleado;
+import isi.died.persistencia.died.ejemplo.modelo.Permanente;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -52,8 +56,19 @@ public class GenericDaoJSON<T> {
     }
 
     public void guardar(List<T> t) {
+    RuntimeTypeAdapterFactory<Empleado> runtimeTypeAdapterFactory = RuntimeTypeAdapterFactory
+        .of(Empleado.class, "type")
+        .registerSubtype(Permanente.class, "permanente")
+        .registerSubtype(Contratado.class, "contratado");
+    
+        Gson gson = new GsonBuilder()
+                //.registerTypeHierarchyAdapter(AbstractBase.class, new AbstractBaseAdapter())
+                //.registerTypeAdapter((new TypeToken<List<AbstractBase>>() {}).getType(),new AbstractBaseAdapter())
+                .registerTypeAdapterFactory(runtimeTypeAdapterFactory)
+                .setPrettyPrinting()
+                .create();
 
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+    
 
         try {
             FileWriter file = new FileWriter(getArchivo());
@@ -67,7 +82,18 @@ public class GenericDaoJSON<T> {
     }
 
     public List<T> cargar(Type typeArgs) {
-        Gson gson = new Gson();
+    RuntimeTypeAdapterFactory<Empleado> runtimeTypeAdapterFactory = RuntimeTypeAdapterFactory
+        .of(Empleado.class, "type")
+        .registerSubtype(Permanente.class, "permanente")
+        .registerSubtype(Contratado.class, "contratado");
+
+      //  RuntimeTypeAdapterFacto <Shape> shapeAdapterFactory = RuntimeTypeAdapterFactory.of(Shape.class, "type")
+        Gson gson = new GsonBuilder()
+                .registerTypeAdapterFactory(runtimeTypeAdapterFactory)
+                //.registerTypeHierarchyAdapter(AbstractBase.class, new AbstractBaseAdapter())
+                //.registerTypeAdapter((new TypeToken<List<AbstractBase>>() {}).getType(),new AbstractBaseAdapter())
+                .setPrettyPrinting()
+                .create();
         List<T> models = null;
         try {
             BufferedReader br = new BufferedReader(new FileReader(getArchivo()));

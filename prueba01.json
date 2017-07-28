@@ -1,0 +1,92 @@
+[
+  {
+    "baz": "asdf",
+    "id": 1,
+    "nombre": "risus hendrerit risus sollicitudin ",
+    "costoHora": 99.99,
+    "esJefe": true,
+    "fechaContratacion": "Jan 1, 2017 12:00:00 AM",
+    "type": "permanente"
+  },
+  {
+    "baz": "asdf",
+    "id": 2,
+    "nombre": "uctor nunc. Mauris consectetur p",
+    "costoHora": 100.48,
+    "esJefe": false,
+    "fechaContratacion": "Jan 4, 2017 12:00:00 AM",
+    "type": "permanente"
+  },
+  {
+    "baz": "asdf",
+    "id": 3,
+    "nombre": "Curabitur sit amet nisi nibh",
+    "costoHora": 99.99,
+    "esJefe": true,
+    "fechaContratacion": "Mar 11, 2017 12:00:00 AM",
+    "type": "permanente"
+  },
+  {
+    "baz": "asdf",
+    "id": 4,
+    "nombre": "nisl tellus sodales nibh, ",
+    "costoHora": 99.99,
+    "esJefe": true,
+    "fechaContratacion": "Aug 15, 2017 12:00:00 AM",
+    "type": "permanente"
+  },
+  {
+    "baz": "asdf",
+    "id": 5,
+    "nombre": "Maecenas hendrerit elit sit amet ex suscipi 1",
+    "costoHora": 99.99,
+    "esJefe": true,
+    "fechaContratacion": "Jan 31, 2017 12:00:00 AM",
+    "type": "permanente"
+  },
+  {
+    "baz": "asdf",
+    "id": 6,
+    "nombre": "Integer pulvinar diam in erat molestie blandit.1",
+    "costoHora": 99.99,
+    "esJefe": true,
+    "fechaContratacion": "Aug 1, 2017 12:00:00 AM",
+    "type": "permanente"
+  },
+  {
+    "baz": "asdf",
+    "id": 7,
+    "nombre": "Nam dui felis, ",
+    "costoHora": 99.99,
+    "esJefe": true,
+    "fechaContratacion": "Jan 1, 2017 12:00:00 AM",
+    "type": "permanente"
+  },
+  {
+    "baz": "asdf",
+    "id": 8,
+    "nombre": "consectetur nec velit",
+    "costoHora": 99.99,
+    "esJefe": true,
+    "fechaContratacion": "Jan 1, 2017 12:00:00 AM",
+    "type": "permanente"
+  },
+  {
+    "baz": "asdf",
+    "id": 9,
+    "nombre": "laoreet vel consequat sed",
+    "costoHora": 99.99,
+    "esJefe": true,
+    "fechaContratacion": "Jan 1, 2017 12:00:00 AM",
+    "type": "permanente"
+  },
+  {
+    "baz": "asdf",
+    "id": 10,
+    "nombre": "Vestibulum at tincidunt tortor, eu ultricies lectus",
+    "costoHora": 99.99,
+    "esJefe": true,
+    "fechaContratacion": "Aug 20, 2017 12:00:00 AM",
+    "type": "permanente"
+  }
+]

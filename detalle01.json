@@ -1,0 +1,32 @@
+[
+  {
+    "id": 200,
+    "codigo": "UUU",
+    "detalle": "Bnnn",
+    "monto": 33.36
+  },
+  {
+    "id": 201,
+    "codigo": "NVA",
+    "detalle": "UNDFn",
+    "monto": 534.23
+  },
+  {
+    "id": 202,
+    "codigo": "PCA",
+    "detalle": "GCFA",
+    "monto": 11.68
+  },
+  {
+    "id": 203,
+    "codigo": "ARA",
+    "detalle": "COAE",
+    "monto": 81.34
+  },
+  {
+    "id": 204,
+    "codigo": "ICY",
+    "detalle": "CYAF",
+    "monto": 234.52
+  }
+]

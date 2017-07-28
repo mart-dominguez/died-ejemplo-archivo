@@ -13,12 +13,13 @@ import java.util.Objects;
  *
  * @author mdominguez
  */
-public class Empleado {
+public abstract class Empleado {
     private Integer id;
     private String nombre;
     private Double costoHora;
     private Boolean esJefe;
     private Date fechaContratacion;
+    protected String type;
 
     public Empleado() {
     }
