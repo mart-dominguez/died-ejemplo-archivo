@@ -27,7 +27,7 @@
     "costoHora": 55.55,
     "esJefe": false,
     "fechaContratacion": "Jan 1, 2017 12:00:00 AM",
-    "type": "empleado"
+    "type": "contratado"
   },
   {
     "cbuCuentaBancaria": "aFDe",
@@ -51,7 +51,7 @@
     "costoHora": 4582.83,
     "esJefe": true,
     "fechaContratacion": "Mar 1, 2017 12:00:00 AM",
-    "type": "empleado"
+    "type": "contratado"
   },
   {
     "cbuCuentaBancaria": "gdfg",
@@ -81,6 +81,6 @@
     "costoHora": 2756.14,
     "esJefe": false,
     "fechaContratacion": "Oct 11, 2017 12:00:00 AM",
-    "type": "empleado"
+    "type": "contratado"
   }
 ]

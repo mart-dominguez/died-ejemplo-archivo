@@ -103,5 +103,28 @@ public class GenericDaoJSON<T> {
         }
         return models;
     }
+    
+    public T cargarElemento(Type typeArgs) {
+    RuntimeTypeAdapterFactory<Empleado> runtimeTypeAdapterFactory = RuntimeTypeAdapterFactory
+        .of(Empleado.class, "type")
+        .registerSubtype(Permanente.class, "permanente")
+        .registerSubtype(Contratado.class, "contratado");
+
+      //  RuntimeTypeAdapterFacto <Shape> shapeAdapterFactory = RuntimeTypeAdapterFactory.of(Shape.class, "type")
+        Gson gson = new GsonBuilder()
+                .registerTypeAdapterFactory(runtimeTypeAdapterFactory)
+                //.registerTypeHierarchyAdapter(AbstractBase.class, new AbstractBaseAdapter())
+                //.registerTypeAdapter((new TypeToken<List<AbstractBase>>() {}).getType(),new AbstractBaseAdapter())
+                .setPrettyPrinting()
+                .create();
+        T models = null;
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(getArchivo()));
+            models = gson.fromJson(br, typeArgs);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return models;
+    }
 
 }

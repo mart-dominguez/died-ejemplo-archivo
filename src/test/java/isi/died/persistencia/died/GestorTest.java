@@ -9,6 +9,8 @@ import isi.died.persistencia.died.ejemplo.modelo.Empleado;
 import isi.died.persistencia.died.ejemplo.modelo.Contratado;
 import isi.died.persistencia.died.ejemplo.modelo.Sueldos;
 import com.google.gson.reflect.TypeToken;
+import isi.died.persistencia.died.ejemplo.dao.EmpresaDao;
+import isi.died.persistencia.died.ejemplo.modelo.Empresa;
 import isi.died.persistencia.died.ejemplo.modelo.Permanente;
 import java.lang.reflect.Type;
 import java.text.ParseException;
@@ -102,6 +104,15 @@ public class GestorTest {
             System.out.println(testRes);
             assertEquals(10, testRes.size());
             assertEquals(sdf.parse("20/08/2017"), testRes.get(9).getFechaContratacion());
+            Empresa e = new Empresa("e111",datos);
+            e.getEmpleado().addAll(datosHijo);
+            EmpresaDao edao = new EmpresaDao();
+            ArrayList<Empresa> empresas = new ArrayList<Empresa>();
+            empresas.add(e);
+            edao.guardar(empresas);
+            List<Empresa> lista2 = edao.cargar();
+            System.out.println(lista2);
+            
         } catch (ParseException ex) {
             Logger.getLogger(GestorTest.class.getName()).log(Level.SEVERE, null, ex);
         }

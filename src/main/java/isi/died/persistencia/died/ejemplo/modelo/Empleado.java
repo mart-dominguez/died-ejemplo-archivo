@@ -107,6 +107,14 @@ public abstract class Empleado {
     public void setFechaContratacion(Date fechaContratacion) {
         this.fechaContratacion = fechaContratacion;
     }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
     
     
     

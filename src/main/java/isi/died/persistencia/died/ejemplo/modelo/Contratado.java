@@ -25,7 +25,7 @@ public class Contratado extends Empleado{
 
     public Contratado(Integer id, String nombre, Double precio, Boolean flag, Date fecha,String dato88, Integer dato99) {
         super(id, nombre, precio, flag, fecha);
-        super.type="empleado";
+        super.type="contratado";
         this.liquidaciones= new ArrayList<>();
         this.cbuCuentaBancaria = dato88;
         this.horasSemanales = dato99;
